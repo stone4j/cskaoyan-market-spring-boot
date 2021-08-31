@@ -1,0 +1,48 @@
+{
+  "groups": [
+    {
+      "name": "cskaoyan.shiro",
+      "type": "com.cskaoyan.mall.config.ShiroProperties",
+      "sourceType": "com.cskaoyan.mall.config.ShiroProperties"
+    },
+    {
+      "name": "cskaoyan.shiro.token-header",
+      "type": "com.cskaoyan.mall.config.ShiroProperties$TokenHeader",
+      "sourceType": "com.cskaoyan.mall.config.ShiroProperties",
+      "sourceMethod": "getTokenHeader()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cskaoyan.shiro.filter-chain",
+      "type": "java.util.LinkedHashMap<java.lang.String,java.lang.String>",
+      "sourceType": "com.cskaoyan.mall.config.ShiroProperties"
+    },
+    {
+      "name": "cskaoyan.shiro.redirect-url",
+      "type": "java.lang.String",
+      "sourceType": "com.cskaoyan.mall.config.ShiroProperties",
+      "defaultValue": "/admin/auth/401"
+    },
+    {
+      "name": "cskaoyan.shiro.token-header.admin",
+      "type": "java.lang.String",
+      "sourceType": "com.cskaoyan.mall.config.ShiroProperties$TokenHeader",
+      "description": "admin token",
+      "defaultValue": "X-CskaoyanMarket-Admin-Token"
+    },
+    {
+      "name": "cskaoyan.shiro.token-header.wx",
+      "type": "java.lang.String",
+      "sourceType": "com.cskaoyan.mall.config.ShiroProperties$TokenHeader",
+      "description": "wx token",
+      "defaultValue": "X-CskaoyanMarket-Token"
+    },
+    {
+      "name": "cskaoyan.shiro.enabled",
+      "type": "java.lang.Boolean",
+      "defaultValue": false
+    }
+  ],
+  "hints": []
+}

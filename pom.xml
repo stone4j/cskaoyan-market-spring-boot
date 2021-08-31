@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cskaoyan.spring.boot</groupId>
+    <artifactId>cskaoyan-market-spring-boot</artifactId>
+    <version>0.1.0</version>
+    <modules>
+        <module>cskaoyan-market-spring-boot-starter</module>
+        <module>cskaoyan-spring-boot-autoconfigure</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>cskaoyan-spring-boot</name>
+    <description>Spring Boot Support for Cskaoyan-Market</description>
+    <properties>
+        <shiro.version>1.7.1</shiro.version>
+        <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cskaoyan.spring.boot</groupId>
+                <artifactId>cskaoyan-market-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cskaoyan.spring.boot</groupId>
+                <artifactId>cskaoyan-spring-boot-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

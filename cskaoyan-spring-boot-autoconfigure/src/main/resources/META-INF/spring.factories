@@ -1,0 +1,4 @@
+# Cskaoyan Market Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cskaoyan.market.config.CorsAutoConfiguration,\
+  com.cskaoyan.market.config.ShiroAutoConfiguration
